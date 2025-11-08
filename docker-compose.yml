@@ -3,3 +3,8 @@ services:
     build: .
     ports:
       - "8080:80"
+    volumes:
+      - ./src:/var/www/html/src
+      - ./public:/var/www/html/public
+      - ./tests:/var/www/html/tests
+      - ./composer.json:/var/www/html/composer.json
